@@ -355,6 +355,8 @@ nav .cart-number{
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
+        width: 295px;
+        flex-shrink: 0;
 }
 .product:hover{
     transform: scale(1.1);
@@ -363,8 +365,10 @@ nav .cart-number{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+.product .product-image{
+    text-align: center;
+}
 .product img {
-    width: 295px;
     height: 184px;
     border-radius: 25px;
     padding: 10px;

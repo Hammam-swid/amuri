@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03 مارس 2023 الساعة 10:06
+-- Generation Time: 03 مارس 2023 الساعة 17:08
 -- إصدار الخادم: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -54,11 +54,14 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`ID`, `Name`, `Colors`, `Price`, `Description`, `Image`, `Type`, `Quantity`) VALUES
 (1, 'سترة سوداء', 3, 29.99, 'سترة جلد سوداء', 'images/black-top.jpg', 'clothes', 43),
-(2, 'سترة أديداس', 3, 24.99, 'سترة بيضاء نايلون', 'images/white-top.jpg', 'clothes', 40),
+(2, 'سترة أديداس', 3, 24.99, 'سترة بيضاء نايلون', 'images/white-top.jpg', 'clothes', 39),
 (3, 'سترة سوداء', 1, 29.99, 'سترة جلد سوداء', 'images/black-top.jpg', 'clothes', 50),
 (4, 'سترة أديداس', 3, 24.99, 'سترة نايلون بيضاء', 'images/white-top.jpg', 'clothes', 50),
 (5, 'حذاء أديداس', 3, 49.99, 'حذاء أديداس فاخر', 'images/white-shoe.jpg', 'shoes', 48),
-(6, 'حذاء نايكي', 3, 54.99, 'حذاء نايكي فاخر', 'images/gray-shoe.jpg', 'shoes', 48);
+(6, 'حذاء نايكي', 3, 54.99, 'حذاء نايكي فاخر', 'images/gray-shoe.jpg', 'shoes', 47),
+(7, 'حذاء جوردان', 2, 69.99, 'حذاء جوردان فاخر', 'images/black-shoe.webp', 'shoes', 20),
+(8, 'حذاء كرة قدم', 3, 99.99, 'حذاء من مستوى عالي لكرة القدم', 'images/football-shoe.webp', 'shoes', 9),
+(9, 'حذاء كرة سلة', 2, 89.99, 'حذاء جوردان لكرة السلة', 'images/basket-shoe.webp', 'shoes', 19);
 
 --
 -- Indexes for dumped tables

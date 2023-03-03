@@ -22,9 +22,6 @@
     <!-- link to main css file -->
     <link rel="stylesheet" href="CSS/home.css">
     <!-- internal style element -->
-    <style>
-        
-    </style>
     <!-- link to Google Font 'Cairo' -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,15 +37,15 @@
                 <img src="images/logo.svg" alt="logo">
             </div>
             
-            <form action = "" method = "post" class="search-bar" >
-                <input type="text" name="search" id="search" oninput='showSearchResult();'>
+            <form action = "" method = "post" class="search-bar">
+                <input type="text" name="search" id="search" onsubmit='showSearchResult();' onblur = "hideSearchResult()">
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <button style = "display: none;" name = "search-btn" id = "search-btn"></button>
+                <!-- <button style = "display: none;" name = "search-btn" id = "search-btn"></button> -->
                 <div class="search-result" id = "search-result">
             <?php
-            if(isset($_POST['search-btn'])){
+            if(isset($_POST['search'])){
                 // echo "<script> alert(); </script>";
                 $item = $_POST['search'];
                 $sql = "SELECT * FROM products WHERE Name like '%$item%' ";
@@ -70,9 +67,10 @@
                 </a>
                 <?php
                     }
-                    // if(!$item_found){
-                    //     echo "The item is not found";
-                    // }
+                    
+                    if(!$item_found){
+                        echo "The item is not found";
+                    }
                 }
             }
             ?>

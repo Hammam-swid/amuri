@@ -31,6 +31,6 @@ function scrollingLeft(arrow,query){
 }
 
 function showSearchResult(){
-    document.getElementById('search-result').style = "height: fit-content;" ;
+    document.getElementById('search-result').style = "height: fit-content;padding:20px;" ;
     document.getElementById('search-btn').click();
 }
